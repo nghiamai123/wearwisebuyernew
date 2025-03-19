@@ -1,0 +1,401 @@
+.main {
+  padding: 1rem;
+  background-color: #fdfdfd;
+  min-height: 100vh;
+  color: #7a7a7a;
+}
+
+@media (min-width: 768px) {
+  .main {
+    padding: 2rem;
+  }
+}
+
+.stepsRow {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .stepsRow {
+    margin-bottom: 2rem;
+  }
+}
+
+.card {
+  background-color: #faf3f5;
+  border: 1px solid #e8cfd4;
+  border-radius: 8px;
+  height: 100%;
+  margin-bottom: 1rem;
+}
+
+.stepTitle {
+  color: #7a7a7a;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .stepTitle {
+    font-size: 16px;
+  }
+}
+
+.infoIcon {
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.uploader {
+  background-color: #fdf7f9 !important;
+  border: 1px dashed #e5bcc6 !important;
+  border-radius: 8px;
+  min-height: 150px;
+  height: auto !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 15px;
+}
+
+@media (min-width: 768px) {
+  .uploader {
+    min-height: 200px;
+    padding: 20px;
+  }
+}
+
+.uploadContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #c9a1af;
+}
+
+.uploadText {
+  margin-top: 8px;
+  font-size: 12px;
+}
+
+@media (min-width: 768px) {
+  .uploadText {
+    font-size: 14px;
+  }
+}
+
+.uploadOr {
+  margin: 4px 0;
+  font-size: 10px;
+  color: #a38591;
+}
+
+@media (min-width: 768px) {
+  .uploadOr {
+    font-size: 12px;
+  }
+}
+
+.uploadClick {
+  font-size: 12px;
+  color: #e08bad;
+}
+
+@media (min-width: 768px) {
+  .uploadClick {
+    font-size: 14px;
+  }
+}
+
+.uploadedImage {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: none;
+  min-height: 150px;
+  object-fit: contain;
+  margin: 10px 0;
+  transition: transform 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  .uploadedImage {
+    min-height: 240px;
+  }
+}
+
+.uploadedImage:hover {
+  transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+  .uploadedImage:hover {
+    transform: scale(1.1);
+  }
+}
+
+.examplesSection {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid #e8cfd4;
+}
+
+@media (min-width: 768px) {
+  .examplesSection {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+  }
+}
+
+.examplesTitle {
+  color: #c9a1af;
+  font-size: 12px;
+  display: block;
+  margin-bottom: 6px;
+}
+
+@media (min-width: 768px) {
+  .examplesTitle {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+}
+
+.examplesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6px;
+}
+
+@media (min-width: 480px) {
+  .examplesGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .examplesGrid {
+    gap: 8px;
+  }
+}
+
+.exampleItem {
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.exampleItem:hover {
+  transform: scale(1.03);
+}
+
+@media (min-width: 768px) {
+  .exampleItem:hover {
+    transform: scale(1.05);
+  }
+}
+
+.exampleItem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.resultContainer {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #faf3f5;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .resultContainer {
+    height: 200px;
+    margin-bottom: 1rem;
+  }
+}
+
+.emptyResult {
+  color: #c9a1af;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.resultImage {
+  max-width: 100%;
+  max-height: 140px;
+  object-fit: contain;
+}
+
+@media (min-width: 768px) {
+  .resultImage {
+    max-height: 180px;
+  }
+}
+
+/* New loading styles */
+.loadingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.progressContainer {
+  width: 80%;
+  height: 6px;
+  background-color: #f0e0e5;
+  border-radius: 4px;
+  margin: 12px 0 6px;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .progressContainer {
+    height: 8px;
+    margin: 16px 0 8px;
+  }
+}
+
+.progressBar {
+  height: 100%;
+  background: linear-gradient(90deg, #e08bad 0%, #d06b9a 100%);
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}
+
+.loadingText {
+  color: #c9a1af;
+  font-size: 12px;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .loadingText {
+    font-size: 14px;
+  }
+}
+
+.seedCard {
+  background-color: #faf3f5 !important;
+  border: 1px solid #e8cfd4 !important;
+}
+
+.runButton {
+  width: 100%;
+  background-color: #e08bad;
+  color: white;
+}
+
+.runButton:disabled {
+  background-color: #e0b0c0;
+  color: #f5e5ea;
+}
+
+.runButtonContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tryOnExamplesSection {
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .tryOnExamplesSection {
+    margin-top: 2rem;
+  }
+}
+
+.tryOnExamplesTitle {
+  color: #7a7a7a;
+  font-size: 14px;
+  display: block;
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .tryOnExamplesTitle {
+    font-size: 16px;
+    margin-bottom: 1rem;
+  }
+}
+
+.tryOnExamplesTable {
+  background-color: #fdf7f9;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tryOnExamplesHeader {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #e8cfd4;
+  padding: 8px;
+  border-bottom: 1px solid #e5bcc6;
+}
+
+@media (min-width: 768px) {
+  .tryOnExamplesHeader {
+    padding: 12px;
+  }
+}
+
+.tryOnHeaderCell {
+  text-align: center;
+  font-weight: 500;
+  color: #7a7a7a;
+  font-size: 12px;
+}
+
+@media (min-width: 768px) {
+  .tryOnHeaderCell {
+    font-size: 14px;
+  }
+}
+
+.tryOnExampleRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-bottom: 1px solid #e5bcc6;
+}
+
+.tryOnCell {
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .tryOnCell {
+    padding: 12px;
+  }
+}
+
+.tryOnCell img {
+  max-width: 80px;
+  max-height: 100px;
+  object-fit: contain;
+}
+
+@media (min-width: 768px) {
+  .tryOnCell img {
+    max-width: 100px;
+    max-height: 120px;
+  }
+}
